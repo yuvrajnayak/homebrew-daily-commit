@@ -1,4 +1,4 @@
-class HomebrewDailyCommit < Formula
+class dcom < Formula
     desc "Bash script to commit file changes daily"
     homepage "github.com/yuvrajnayak/homebrew-daily-commit"
     url "https://github.com/yuvrajnayak/daily-commit/archive/1.1.0.tar.gz"
