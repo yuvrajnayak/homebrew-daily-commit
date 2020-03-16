@@ -5,7 +5,7 @@ class Dcom < Formula
     sha256 "18e20110a062d889eebfb58a5f44898e223dad855a32ff7c73facaa796499003"
 
     def install
-        bin.install "homebrew-daily-commit/dcom"
+        bin.install "dcom"
     end
 
 end
