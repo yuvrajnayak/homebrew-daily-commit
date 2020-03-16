@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# maximum/minimum random number of commits each day
+FLOOR=3
+CEILING=15
+
+# picks random number RESULT between FLOOR and CEILING
+RANGE=$(($CEILING-$FLOOR+1))
+RESULT=$RANDOM
+let "RESULT %= $RANGE"
+RESULT=$(($RESULT+$FLOOR))
+
+# if statement decides whether to run or skip each day (1/5 chance to skip)
+if [[ ! $(( $RESULT % 4)) -eq 0 ]]
+then
+
+    # filepath to your dailycommit repo
+    cd ~/Documents/dailycommit
+
+    for ((n=0; n<$RESULT; n++))
+    do
+
+        # # commits one character to commit.txt in dailycommit
+        # echo "d" >> commit.txt
+        # git add commit.txt
+        # git commit -m "daily commit"
+        # git push
+
+        echo hi
+    
+    done
+fi
