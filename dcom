@@ -20,13 +20,11 @@ then
     for ((n=0; n<$RESULT; n++))
     do
 
-        # # commits one character to commit.txt in dailycommit
-        # echo "d" >> commit.txt
-        # git add commit.txt
-        # git commit -m "daily commit"
-        # git push
-
-        echo hit
+        # commits one character to commit.txt in dailycommit
+        echo "d" >> commit.txt
+        git add commit.txt
+        git commit -m "daily commit"
+        git push
     
     done
 fi
