@@ -5,7 +5,7 @@ class HomebrewDailyCommit < Formula
     sha256 "50470059c23d8c3c40146fef2d9d97fc9debef726a828642624a90870ac57bfd"
 
     def install
-        bin.install ../dcom
+        bin.install "../dcom"
     end
 
 end
