@@ -10,7 +10,7 @@ You can download the script using 🍺[Homebrew](https://brew.sh/)
 ```
 brew tap yuvrajnayak/daily-commit
 ```
-and install the daily commit command dcom:
+and install the daily commit command `dcom`:
 ```
 brew install dcom
 ```
