@@ -28,3 +28,5 @@ then
     
     done
 fi
+
+sleep 10s
