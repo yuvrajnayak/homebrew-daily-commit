@@ -19,3 +19,4 @@ The `dcom` command will have a 4/5 chance of committing a random amount of chars
 sudo curl -o /Library/LaunchDaemons/local.dailycommit.plist https://raw.githubusercontent.com/yuvrajnayak/homebrew-daily-commit/master/plist.xml
 sudo launchctl load -w /Library/LaunchDaemons/local.dailycommit.plist
 ```
+You can also run `dcom` anytime from the terminal to add commits manually.
