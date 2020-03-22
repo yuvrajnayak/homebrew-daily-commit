@@ -1,6 +1,6 @@
 # Daily Commit
 
-This is a small bash shell script I wrote to automatically commit some text to a file every day (for Macs). 
+This is a small bash script I wrote to automatically commit some text to a file every day (for Macs). 
 
 ## Install
 
@@ -23,7 +23,7 @@ You can also run `dcom` anytime from the terminal to add commits manually.
 
 ## Uninstall
 
-To stop the process for any reason, unload it from `launchctl`
+To stop the process from running every day, unload it from `launchctl`
 ```
 launchctl unload ~/Library/LaunchAgents/local.dailycommit.plist
 ```
