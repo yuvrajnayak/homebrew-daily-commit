@@ -14,9 +14,9 @@ and install the daily commit command `dcom`:
 ```
 brew install dcom
 ```
-The `dcom` command will have a 4/5 chance of committing a random amount of chars to the `commit.txt` file every time it is run. To run this command once each day, add a [launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html) plist job configuration file to `/Library/LaunchDaemons` with these two `sudo` commands:
+The `dcom` command will have a 4/5 chance of committing a random amount of chars to the `commit.txt` file every time it is run. To run this command once each day, add a [launchd](https://developer.apple.com/library/archive/documentation/MacOSX/Conceptual/BPSystemStartup/Chapters/CreatingLaunchdJobs.html) plist job configuration file to `~/Library/LaunchAgents` with these two commands:
 ```
-sudo curl -o /Library/LaunchDaemons/local.dailycommit.plist https://raw.githubusercontent.com/yuvrajnayak/homebrew-daily-commit/master/plist.xml
-sudo launchctl load -w /Library/LaunchDaemons/local.dailycommit.plist
+curl -o ~/Library/LaunchAgents/local.dailycommit.plist https://raw.githubusercontent.com/yuvrajnayak/homebrew-daily-commit/master/plist.xml
+launchctl load ~/Library/LaunchAgents/local.dailycommit.plist
 ```
 You can also run `dcom` anytime from the terminal to add commits manually.
