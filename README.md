@@ -20,3 +20,14 @@ curl -o ~/Library/LaunchAgents/local.dailycommit.plist https://raw.githubusercon
 launchctl load ~/Library/LaunchAgents/local.dailycommit.plist
 ```
 You can also run `dcom` anytime from the terminal to add commits manually.
+
+## Uninstall
+
+To stop the process for any reason, unload it from `launchctl`
+```
+launchctl unload ~/Library/LaunchAgents/local.dailycommit.plist
+```
+and to remove this utility altogether untap from Homebrew:
+```
+brew untap yuvrajnayak/daily-commit
+``
